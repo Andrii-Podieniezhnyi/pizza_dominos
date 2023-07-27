@@ -112,7 +112,7 @@ h3 {
     text-transform: uppercase;
 }
 
-sub {
+.sub_1, .sub_2 {
     display: block;
     font-size: 1em;
     letter-spacing: 2px;
@@ -342,6 +342,11 @@ footer > form > div > p {
     color: red;
 }
 
+@media screen and (max-width:1024px) {
+    .sub_1{
+        display: none;
+    }
+}
 
 
 @media screen and (max-width:768px){
@@ -448,8 +453,6 @@ footer > form > div > p {
 }
 
 
-
-
 .sauces > div {
     display: flex;
     flex-direction: column;
@@ -499,8 +502,7 @@ footer > form > div > p {
     background-color: #ffffff00;  
 }
 
-.hover{
+.hover {
     top: 10em;
     position: absolute;
 }
-
