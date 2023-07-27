@@ -342,12 +342,80 @@ footer > form > div > p {
     color: red;
 }
 
+.sauces > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sauce{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.topping{
+    width: 155px;
+    text-align: center;
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background-color: blue;
+    color: yellow;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topping_quantity{
+    width: 25px;
+    height: 25px;
+    background-color: #f9c234;
+    color: black;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+}
+
+#topping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_del_quantity {
+    border: none;
+    background-color: #ffffff00;  
+}
+
+.hover {
+    top: 10em;
+    position: absolute;
+}
+
+
 @media(max-width:1100px) {
     .sub_1{
         display: none;
     }
 }
 
+@media (min-width: 768px) {
+    .wrapper{
+        padding: 0;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        font-size: 0.74em;
+    }
+}
 
 @media screen and (max-width:768px){
     nav{
@@ -380,7 +448,6 @@ footer > form > div > p {
         font-size: 1.25em;
     }
 }
-
 
 @media screen and (max-width:600px) {
     nav, #banner {
@@ -436,73 +503,4 @@ footer > form > div > p {
         padding: 30px 0 0;
         text-align: center;
     }
-}
-
-@media (min-width: 768px) {
-    .wrapper{
-        padding: 0;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-    li {
-        font-size: 0.74em;
-    }
-}
-
-
-.sauces > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#sauce{
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.topping{
-    width: 155px;
-    text-align: center;
-    border: 1px solid;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    background-color: blue;
-    color: yellow;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.topping_quantity{
-    width: 25px;
-    height: 25px;
-    background-color: #f9c234;
-    color: black;
-    display: flex;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    position: inherit;
-}
-
-#topping {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button_del_quantity {
-    border: none;
-    background-color: #ffffff00;  
-}
-
-.hover {
-    top: 10em;
-    position: absolute;
 }
